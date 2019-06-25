@@ -1,0 +1,8 @@
+/_pycache__
+/model
+/venv
+app.sublime-workspace
+data.py
+test.db
+sqlite3.exe
+templates/mldemo.html

@@ -1,0 +1,42 @@
+{% extends 'Layout.html' %}
+
+{% block body %}
+ 
+   <h1>ML Demo</h1>
+   <form method="POST" action="">
+   		<div class="form-group">
+            <label>Number of times pregnant</label>
+            <input type="number" name="preg" class="form-control" value={{request.form.preg}}>
+   		</div>
+   		<div class="form-group">
+   			<label>Plasma glucose concentration a 2 hours in an oral glucose tolerance test</label>
+            <input type="number" name="plas" class="form-control" value={{request.form.plas}}>
+   		</div>
+         <div class="form-group">
+            <label>Diastolic blood pressure (mm Hg)</label>
+            <input type="number" name="pres" class="form-control" value={{request.form.pres}}>
+         </div>
+         <div class="form-group">
+            <label>Triceps skin fold thickness (mm)</label>
+            <input type="number" name="skin" class="form-control" value={{request.form.skin}}>
+         </div>
+         <div class="form-group">
+            <label>2-Hour serum insulin (mu U/ml)</label>
+            <input type="number" name="test" class="form-control" value={{request.form.test}}>
+         </div>
+         <div class="form-group">
+            <label>Body mass index (weight in kg/(height in m)^2)</label>
+            <input type="number" name="mass" class="form-control" value={{request.form.mass}}>
+         </div>
+         <div class="form-group">
+            <label>Diabetes pedigree function</label>
+            <input type="number" name="pedi" class="form-control" value={{request.form.pedi}}>
+         </div>
+         <div class="form-group">
+            <label>Age (years)</label>
+            <input type="number" name="age" class="form-control" value={{request.form.age}}>
+         </div>
+   		<p><input type="submit" class="btn btn-primary" value="Submit"></p>
+   </form>
+    
+{% endblock %}
